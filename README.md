@@ -40,18 +40,8 @@ Written in lowerCamelCase.
 
 ```java
 public int publicField;
-```
-
-* Non-public, non-static field names start with an m.
-``` java
-int mPackagePrivate;
-private int mPrivate;
-protected int mProtected;
-```
-
-* Static field names start with an s.
-``` java
-private static SingletonClass sSingleton;
+private int privateField;
+private static SingletonClass singleton;
 ```
 
 * Static final fields should be written in uppercase, with an underscore separating words
@@ -106,13 +96,17 @@ button_save.xml
 BAD:
 
 ``` java
- android:id="@+id/userName"
+android:id="@+id/USER_NAME"
+android:id="@+id/UserName"
+android:id="@+id/Name"
+android:id="@+id/NAME"
 ```
 
 GOOD:
 
 ``` java
  android:id="@+id/user_name"
+ android:id="@+id/userName"
  android:id="@+id/name"
 ```
 
